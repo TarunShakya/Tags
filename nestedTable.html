@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nested Table Example</title>
+<style>
+    .outer-table{
+        margin-top: 2rem;
+    }
+    .outer-table th{
+        background-color: aqua;
+    }
+    .outer-table td{
+        background-color: rgb(78, 112, 112);
+    }
+
+ .inner-table th{
+        background-color: rgb(194, 231, 231);
+    }
+
+    .inner-table td{
+        background-color: rgb(15, 133, 192);
+    }
+</style>
+</head>
+<body>
+
+  <table class="outer-table" border="1" align="center" >
+    <thead>
+      <tr>
+        <th>Outer Header 1</th>
+        <th>Outer Header 2</th>
+        <th>Outer Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Outer Cell A1</td>
+        <td>
+          <table class="inner-table" border="1">
+            <thead>
+              <tr>
+                <th>Inner Header X</th>
+                <th>Inner Header Y</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Inner Data 1</td>
+                <td>Inner Data 2</td>
+              </tr>
+              <tr>
+                <td>Inner Data 3</td>
+                <td>Inner Data 4</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End of the inner table -->
+        </td>
+        <td>Outer Cell A3</td>
+      </tr>
+      <tr>
+        <td>Outer Cell B1</td>
+        <td>Outer Cell B2</td>
+        <td>Outer Cell B3</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
