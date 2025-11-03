@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 2px solid #dee2e6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #343a40;
+        }
+
+        .highlight {
+            background-color: #f8f9fa;
+        }
+
+        .special {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TIME TABLE</h1>
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>08:50-9:40</th>
+            <th>II<br>09:40-10:30</th>
+            <th>III<br>10:40-11:30</th>
+            <th>IV<br>11:30-12:20</th>
+            <th>12:20-1:10</th>
+            <th>V<br>1:10-2:00</th>
+            <th>VI<br>2:00-2:50</th>
+            <th>VII<br>2:50-3:40</th>
+            <th>VIII<br>3:40-4:30</th>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Monday</b></td>
+            <td>OS</td>
+            <td>Mat</td>
+            <td>AI</td>
+            <td>Employability Skills</td>
+            <td rowspan="6" class="special"><b>LUNCH</b></td>
+            <td>DSA With C++</td>
+            <td>Web Des.</td>
+            <td>Soft Skills</td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Tuesday</b></td>
+            <td>Web Des.</td>
+            <td>OS</td>
+            <td>Web Des.</td>
+            <td>DSA With C++</td>
+            <td>Mat</td>
+            <td>AI</td>
+            <td>Soft Skills</td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Wednesday</b></td>
+            <td>DSA With C++</td>
+            <td>Mat</td>
+            <td colspan="2">Employability Skills</td>
+            <td>Soft Skills</td>
+            <td colspan="2">AI</td>
+            <td>Web Des.</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Thursday</b></td>
+            <td colspan="2">Web Des.</td>
+            <td>Mat</td>
+            <td>Web Des.</td>
+            <td>Soft Skills</td>
+            <td>OS</td>
+            <td colspan="2">DSA With C++</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Friday</b></td>
+            <td>Mat</td>
+            <td>DSA With C++</td>
+            <td>OS</td>
+            <td>AI</td>
+            <td>Employability Skills</td>
+            <td>Web Des.</td>
+            <td>Soft Skills</td>
+            <td>Library</td>
+        </tr>
+        
+    </table>
+</body>
+
+</html>
