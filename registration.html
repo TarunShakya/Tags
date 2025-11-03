@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensures consistent box model behavior */
+      }
+      .contain {
+       
+        
+        position: absolute;
+        width: 700px;
+        height: 600px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 5%;
+        text-align: center;
+        padding-top: 5rem;
+        background-color: whitesmoke;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        font-size: larger;
+      }
+      button {
+        width: 300px;
+        height: 50px;
+        border-radius: 10%;
+        font-size: large;
+        background-color: #04aa6d;
+        border: none;
+        color: white;
+        
+      }
+      .label{
+        font-size: larger;
+      }
+      .input{
+        border: none;
+        height: 30px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <form action="./login.html">
+        <h1>Register</h1><br><br>
+        <label for="First-Name" class="label"> <b>First Name:</b> </label>
+        <input type="text" placeholder="First-Name" name="fname" class="input" required /><br><br>
+        <label for="Last-Name" class="label"> <b>Last Name:</b> </label>
+        <input type="text" placeholder="Last-Name" name="lname" class="input" required />
+        <br /><br />
+        <label for="gender" class="label"><b>Gender: </b></label>
+        <input type="radio" name="gender" value="Male"><label for="male"><b>Male</b></label>
+       <input type="radio" name="gender" value="female"><label for="male"><b>Female</b></label><br><br>
+       <label for="uname" class="label"> <b>Email-Id:</b> </label>
+        <input type="text" placeholder="Email" name="email" required class="input" /> 
+       <br><br><label for="pass" class="label"><b>Password</b></label>
+        <input type="password" placeholder="Password" name="pass" required class="input"/>
+        <br /><br /><button type="submit">Register</button> <br /><br />
+        <span>Already User? <a href="./login.html">Login Here</a></span
+        >
+      </form>
+    </div>
+  </body>
+</html>
