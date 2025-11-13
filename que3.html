@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with GET and POST Method</title>
+</head>
+<body>
+  <h1>Form Example: GET and POST</h1>
+
+  <!-- GET Method Form -->
+  <h2>GET Method Form</h2>
+  <form action="/getData" method="get">
+    <label for="gname">Name:</label>
+    <input type="text" id="gname" name="name" required>
+    <br><br>
+
+    <label for="gemail">Email:</label>
+    <input type="email" id="gemail" name="email" required>
+    <br><br>
+
+    <button type="submit">Submit (GET)</button>
+  </form>
+
+  <hr>
+
+  <!-- POST Method Form -->
+  <h2>POST Method Form</h2>
+  <form action="/postData" method="post">
+    <label for="pname">Name:</label>
+    <input type="text" id="pname" name="name" required>
+    <br><br>
+
+    <label for="pemail">Email:</label>
+    <input type="email" id="pemail" name="email" required>
+    <br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="Write your message here..." required></textarea>
+    <br><br>
+
+    <button type="submit">Submit (POST)</button>
+  </form>
+
+</body>
+</html>
